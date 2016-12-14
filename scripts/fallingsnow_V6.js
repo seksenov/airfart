@@ -67,8 +67,11 @@ function Snowflake(element, speed, xPos, yPos) {
 	
 	// setting an initial opacity and size for our snowflake
     this.element.style.opacity = .1 + Math.random();
-    var sc = Math.random();
-    this.element.setAttribute("transform", "scale("+.001+")");
+    var sc = 1 + Math.random();
+    //this.element.setAttribute("transform", "scale("+.001+")");
+    this.element.style.width = 50; // * sc;
+    this.element.style.height = 50; // * sc;
+    console.log(this.element.viewBox);
 }
 
 //
@@ -82,7 +85,7 @@ Snowflake.prototype.update = function () {
 	this.yPos += Math.sin(this.counter) / 40 + this.speed / 30;
 	
 	// setting our snowflake's position
-	//setTranslate3DTransform(this.element, Math.round(this.xPos), Math.round(this.yPos));
+	setTranslate3DTransform(this.element, Math.round(this.xPos), Math.round(this.yPos));
     
     // if snowflake goes below the browser window, move it back to the top
 	if (this.yPos > browserHeight) {
