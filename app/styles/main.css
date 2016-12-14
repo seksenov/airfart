@@ -18,7 +18,7 @@
  */
 body {
     margin: 0;
-    background-color: #2196F3
+    background-color: #FFF8DC
 }
 * {
     -webkit-user-select: none;
@@ -178,8 +178,8 @@ body
 }
 
 .horn {
-    background-color: #F44336;
-    box-shadow: 0 5px 2px 0 #1565C0;
+    background-color: #D2691E;
+    box-shadow: 0 5px 2px 0 #DEB887;
     -webkit-transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1);
     transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1)
 }
@@ -200,7 +200,7 @@ body
     justify-content: center
 }
 .horn .inner {
-    background-color: #B71C1C
+    background-color:#8B4513
 }
 .horn .inner .center {
     background-color: #000;

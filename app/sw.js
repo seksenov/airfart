@@ -29,7 +29,8 @@ self.addEventListener('install', e => {
         '/?homescreen=1',
         '/styles/main.css',
         '/scripts/main.min.js',
-        '/sounds/airhorn.mp3'
+        '/sounds/airhorn.mp3',
+        '/images/poop.svg'
       ])
       .then(() => self.skipWaiting());
     })
