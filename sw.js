@@ -29,7 +29,6 @@ self.addEventListener('install', e => {
         './?homescreen=1',
         './styles/main.css',
         './scripts/main.min.js',
-        './scripts/fallingsnow_V6.js',
         './sounds/airhorn.mp3',
         './images/poop.svg'
       ])
