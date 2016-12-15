@@ -69,9 +69,8 @@ function Snowflake(element, speed, xPos, yPos) {
     this.element.style.opacity = .1 + Math.random();
     var sc = 1 + Math.random();
     //this.element.setAttribute("transform", "scale("+.001+")");
-    this.element.style.width = 50; // * sc;
-    this.element.style.height = 50; // * sc;
-    console.log(this.element.viewBox);
+    this.element.setAttribute("width", Math.round(55 * sc));
+    this.element.setAttribute("height", Math.round(55 * sc));
 }
 
 //
@@ -88,8 +87,8 @@ Snowflake.prototype.update = function () {
 	setTranslate3DTransform(this.element, Math.round(this.xPos), Math.round(this.yPos));
     
     // if snowflake goes below the browser window, move it back to the top
-	if (this.yPos > browserHeight) {
-		this.yPos = -50;
+	if (this.yPos > browserHeight + 100) {
+		this.yPos = -150;
 	}
 }
 
@@ -125,7 +124,7 @@ function generateSnowflakes() {
 	
 		// set our snowflake's initial position and related properties
 	    var initialXPos = getPosition(50, browserWidth);
-	    var initialYPos = getPosition(50, browserHeight);
+	    var initialYPos = getPosition(50, -1000);
 	    var speed = 5+Math.random()*40;
 	    
 	    // create our Snowflake object
@@ -182,4 +181,17 @@ function getPosition(offset, size) {
 //
 function setResetFlag(e) {
 	resetPosition = true;
+}
+
+//
+// Delete all snowflakes
+//
+function stopShit() {
+    var tmp = snowflakes[0].element;
+    for (var i = 0; i < snowflakes.length - 1; i++) {
+        console.log(snowflakes[i]);
+        snowflakes[i].element.parentNode.removeChild(snowflakes[i].element);
+    }
+
+    snowflakes = [];
 }
