@@ -23,15 +23,15 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('airhorner').then(cache => {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/index.html?homescreen=1',
-        '/?homescreen=1',
-        '/styles/main.css',
-        '/scripts/main.min.js',
-        '/scripts/fallingsnow_V6.js',
-        '/sounds/airhorn.mp3',
-        '/images/poop.svg'
+        './',
+        './index.html',
+        './index.html?homescreen=1',
+        './?homescreen=1',
+        './styles/main.css',
+        './scripts/main.min.js',
+        './scripts/fallingsnow_V6.js',
+        './sounds/airhorn.mp3',
+        './images/poop.svg'
       ])
       .then(() => self.skipWaiting());
     })
