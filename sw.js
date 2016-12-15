@@ -21,17 +21,17 @@
 
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open('airhorner').then(cache => {
+    caches.open('airfart').then(cache => {
       return cache.addAll([
-        '/airfart/',
-        'airfart/index.html',
-        'airfart/index.html?homescreen=1',
-        'airfart/?homescreen=1',
-        'airfart/styles/main.css',
-        'airfart/scripts/main.min.js',
-        'airfart/scripts/fallingsnow_V6.js',
-        'airfart/sounds/airhorn.mp3',
-        'airfart/images/poop.svg'
+        '/',
+        '/index.html',
+        '/index.html?homescreen=1',
+        '/?homescreen=1',
+        '/styles/main.css',
+        '/scripts/main.min.js',
+        '/scripts/fallingsnow_V6.js',
+        '/sounds/airhorn.mp3',
+        '/images/poop.svg'
       ])
       .then(() => self.skipWaiting());
     })
