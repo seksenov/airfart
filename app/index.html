@@ -46,13 +46,13 @@
       <span class='tooltip'></span>
     </div>
     <div id="snowflakeContainer">
-      <img class="snowflake" style="visibility: hidden;" src="images/poop.svg" width="100" height="100"/>
+      <img class="snowflake" style="visibility: hidden;" src="./images/poop.svg" width="100" height="100"/>
     </div>
-    <script src=/scripts/main.min.js></script>
+    <script src=./scripts/main.min.js></script>
 
     <script>
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+        navigator.serviceWorker.register('./sw.js', { scope: '/' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });
