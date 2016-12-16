@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
-  "name": "Air Horner",
+  "name": "Air Fart",
   "launch_path": "/index.html",
-  "description": "An Air Horn",
+  "description": "The Best Fart App Ever",
   "icons": {
     "128": "/images/touch/icon-128x128.png"
   },
   "developer": {
-    "name": "Paul Kinlan",
-    "url": "http://paul.kinlan.me"
+    "name": "Kiril Seksenov",
+    "url": "https://github.com/seksenov"
   },
   "installs_allowed_from": [
     "*"
@@ -18,8 +18,8 @@
   },
   "locales": {
     "en": {
-      "name": "Air Horner",
-      "description": "Air Horner"
+      "name": "Air Fart",
+      "description": "Air Fart"
     }
   }
 }

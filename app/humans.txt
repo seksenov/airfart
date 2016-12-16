@@ -3,12 +3,12 @@
 
 # TEAM
 
-  Paul Kinlan
+  Thanks to Paul Kinlan for Air Horner and the inspiration
 
 # THANKS
 
-  My team for not getting so annoyed that they hit me.
+  My team for not getting so annoyed that they hit me. (Still Applies)
 
 # TECHNOLOGY COLOPHON
 
-  HTML5, CSS3, Web Audio, Web Starter Kit
+  HTML5, CSS3, Web Audio, Web Starter Kit, Service Workers
