@@ -260,6 +260,7 @@ body
     color: #FFFFFF;
     user-select: none;
     z-index: 5;
+    filter: blur(20px);
 }
 .snowflake:hover {
     cursor: default;
